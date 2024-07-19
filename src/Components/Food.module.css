@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     padding: 4em 6em;
-    gap: 40px;
+    gap: 85px;
 }
 
 .foodcont h1 {
@@ -36,7 +36,7 @@
 
 .food .foodimages .img .imagesfood {
     
-    width: 330px;
+    width: 300px;
     height: 300px;
     border-radius: .4em;
 }
@@ -91,7 +91,7 @@
 .foodcont .cart {
     background: hsl(20, 50%, 98%);
     padding: 1.2em ;
-    width: 400px;
+    width: 450px;
     height: 560px;
     border-radius: .4em;
 }

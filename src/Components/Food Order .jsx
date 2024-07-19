@@ -14,6 +14,7 @@ import carbon from "../assets/images/icon-carbon-neutral.svg";
 import PropTypes from "prop-types";
 
 export const Food = ({ 
+    addCart,
     order,
     remove,
  }) => {
@@ -25,7 +26,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={waffle} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -41,7 +42,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={brulee} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -57,7 +58,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={macaron} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -73,7 +74,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={tiramisu} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -89,7 +90,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={baklava} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -105,7 +106,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={pie} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -121,7 +122,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={cake} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -137,7 +138,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={brownie} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -153,7 +154,7 @@ export const Food = ({
         <div className={style.foodimages}>
           <div className={style.img}>
             <img className={style.imagesfood} src={cotta} alt="" />
-            <button type="click" className={style.foodbtn}>
+            <button type="click" onClick={addCart} className={style.foodbtn}>
               <img src={cart} alt="" />
               Add to Cart
             </button>
@@ -178,7 +179,7 @@ export const Food = ({
             </p>
           </div>
           <div className={style.cartminus}>
-            <img src={remove} alt="" />
+            <img onClick={remove} src={removeimg} alt="" />
           </div>
         </div>
 
@@ -190,7 +191,7 @@ export const Food = ({
             </p>
           </div>
           <div className={style.cartminus}>
-            <img src={remove} alt="" />
+            <img onClick={remove} src={removeimg} alt="" />
           </div>
         </div>
 
@@ -229,4 +230,5 @@ export const Food = ({
 Food.propTypes = {
   order: PropTypes.func.isRequired,
   remove: PropTypes.func.isRequired,
+  addCart: PropTypes.func.isRequired,
 };
