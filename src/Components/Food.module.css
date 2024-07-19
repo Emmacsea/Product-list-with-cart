@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     padding: 4em 6em;
-    gap: 85px;
+    gap: 60px;
 }
 
 .foodcont h1 {
@@ -91,7 +91,7 @@
 .foodcont .cart {
     background: hsl(20, 50%, 98%);
     padding: 1.2em ;
-    width: 450px;
+    width: 470px;
     height: 560px;
     border-radius: .4em;
 }
