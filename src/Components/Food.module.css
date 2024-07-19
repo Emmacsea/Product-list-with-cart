@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    background: hsl(13, 31%, 94%);
+
+}
+
 .foodcont {
     width: 100%;
     background: hsl(13, 31%, 94%);
@@ -91,7 +97,7 @@
 .foodcont .cart {
     background: hsl(20, 50%, 98%);
     padding: 1.2em ;
-    width: 470px;
+    width: 400px;
     height: 560px;
     border-radius: .4em;
 }
